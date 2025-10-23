@@ -1,12 +1,12 @@
-# Use the official Microsoft SQL Server 2022 image
+# Use official SQL Server 2022 image
 FROM mcr.microsoft.com/mssql/server:2022-latest
 
-# Set environment variables
+# Accept EULA and set SA password
 ENV ACCEPT_EULA=Y
-ENV MSSQL_SA_PASSWORD=Temp..123
+ENV SA_PASSWORD=Temp..123
 ENV MSSQL_PID=Express
 
-# Expose SQL Server port
+# Expose SQL Server default port
 EXPOSE 1433
 
 # Start SQL Server

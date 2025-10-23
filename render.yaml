@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: mssql-server
+    env: docker
+    dockerfilePath: ./Dockerfile
+    plan: free
+    port: 1433
