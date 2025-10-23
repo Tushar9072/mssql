@@ -10,4 +10,6 @@ ENV MSSQL_PID=Express
 EXPOSE 1433
 
 # Start SQL Server
+USER root
 CMD ["/opt/mssql/bin/sqlservr"]
+
